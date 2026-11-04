@@ -1,0 +1,14 @@
+# Ejecutables y archivos compilados
+*.exe
+*.o
+*.obj
+*.out
+*.dSYM/
+doc_generator
+
+# Editores e IDEs
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
