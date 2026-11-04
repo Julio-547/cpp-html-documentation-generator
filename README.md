@@ -2,9 +2,8 @@
 
 Programa en C++ que lee un archivo `.cpp`, extrae los comentarios de documentación escritos entre `/**` y `*/` y genera una página `.html` con esa información (programa, funciones, parámetros y valores de retorno). Es una versión simplificada de herramientas como Doxygen o Javadoc.
 
-<!-- Agrega aquí tu captura: guarda la imagen como docs/captura.png y descomenta la línea
+
 ![Ejemplo del HTML generado](docs/captura.png)
--->
 
 ## Etiquetas soportadas
 
