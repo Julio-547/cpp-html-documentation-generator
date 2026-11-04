@@ -14,6 +14,10 @@ int main() {
     Nombre_ArchEnt = Nombre + ".cpp";
     Nombre_ArchSal = Nombre + ".html";
     ArchEnt.open(Nombre_ArchEnt);
+    if (!ArchEnt.is_open()) {    //Te avisa si no pudiste abrir el archivo
+        cout << "No se pudo abrir el archivo" << endl;
+        return 1; //Detiene el programa si no se abre el archivo y no continua con la ejecucion del while
+    }
     ArchSal.open(Nombre_ArchSal);
     
     ArchSal << "<!DOCTYPE html>" << endl; //Plantilla principal del HTML
@@ -25,10 +29,6 @@ int main() {
     ArchSal << "</head>" << endl;
     ArchSal << "<body>" << endl;
 
-    if (!ArchEnt.is_open()) {    //Te avisa si no pudiste abrir el archivo
-        cout << "No se pudo abrir el archivo" << endl;
-        return 1; //Detiene el programa si no se abre el archivo y no continua con la ejecucion del while
-    }
     while (getline(ArchEnt, linea)){
         int inicio = linea.find("/**");
         int final = linea.find("*/");
